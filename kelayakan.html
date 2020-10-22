@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+  </head>
+  <body>
+    <section class="overlay">
+      <h1>Studi Kelayakan</h1>
+      <hr>
+      <h2>Biaya Material</h2>
+      <p>Silahkan masukan (dalam satuan mm) :</p>
+      <form action="submission.html" method="GET">
+        <label for="username">Panjang:</label>
+        <br>
+				<input id="username" name="username" type="number" required minlength="3" maxlength="15">
+        <br>
+        <label for="pw">Lebar:</label>
+        <br>
+        <!--Add the pattern attribute to the input below-->
+				<input id="pw" name="pw" type="number" required minlength="8" maxlength="15">
+        <br>
+        <label for="username">Ketebalan:</label>
+        <br>
+				<input id="username" name="username" type="number" required minlength="3" maxlength="15">
+        <br>
+        <br>
+        
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </body>
+</html>

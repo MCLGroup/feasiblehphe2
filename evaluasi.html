@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    
+        <h1 class= "mt-4 text-center">Evaluasi</h1>
+        <hr>
+        
+        <div class="container2-fluid">
+      
+      
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                  <div class="text-center">
+              <h3 class="text-center mt-3">Temperatur Keluar Evaporator</h3>
+              <br>
+              <label for="weather" class="text-center">Jumlah baris n </label> 	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp;	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp;	&nbsp; 	&nbsp;	&nbsp; &nbsp; &nbsp; &nbsp;
+               <select id="weather" class="text-center"> 	
+                <option value=""></option>
+                <option value="sunny">2</option>
+                <option value="rainy">4</option>
+                
+               </select>
+               <br>
+               <br>
+               <label for="weather2">Kecepatan Masuk (m/s) </label>	&nbsp; 	&nbsp; 	&nbsp; 	&nbsp;	&nbsp; 	
+                <select id="weather2">
+                <option value=""></option>
+                <option value="satulima">1.5</option>
+                <option value="dua">2</option>
+                <option value="dualima">2.5</option>
+                
+               </select>
+               <br>
+               <br>
+               <label for="weather3">Temperatur Masuk Evaporator</label>
+                <select id="weather3">
+                <option value=""></option>
+                <option value="tigapuluh">30</option>
+                <option value="tigalima">35</option>
+                <option value="empatpuluh">40</option>
+                <option value="empatlima">45</option>
+               </select>
+               <br>
+               <br>
+               <br>
+               <h6></h6>
+               
+               </div>
+               
+              </div>
+              
+              <div class="col-12 col-lg-4">
+                <h3 class="text-center mt-3">Efektivitas</h3>
+                <br>
+                <div class="text-center">
+                <p>
+                    <label>Temperatur Masuk Evaporator</label>
+                    <input id="tei" type="number">
+                </p>
+                <p>
+                    <label>Temperatur Masuk Kondenser </label>
+                    <input id="tci" type="number">
+                </p>
+                <p>
+                    <label>Temperatur Keluar Evaporator</label>
+                    <input id="teo" type="number">
+                </p>
+                <td><input type="button" value="Hitung" onclick="calculate2()"/> </td>
+                <br>
+                <br>
+                
+                <p><b><span id="efektivitas"></b></span></p>
+                </div>
+                </div>
+              
+              
+                <div class="col-12 col-lg-4">
+                <h3 class="text-center mt-3">Heat Recovery</h3>
+                <br>
+                <div class="text-center">
+                    <p>
+                        <label>Aliran Massa</label>
+                        <input id="am" type="number">
+                    </p>
+                    <p>
+                        <label>Kalor Spesifik</label>
+                        <input id="ks" type="number">
+                    </p>
+                    <br>
+                    <br>
+                    <td><input type="button" value="Hitung" onclick="calculate3()"/> </td>
+                    <br>
+                    <br>
+                    <p><b><span id="pemulihanpanas"></span></b></p>
+                </div>
+                </div>
+
+            
+
+
+              
+        
+              
+              </div>
+    </section>
+</body>
+</html>
